@@ -223,9 +223,9 @@ class AppConfig:
 
     def get_model(self, model_name, require_ready=True):
         """
-        Return the model with the given case-insensitive model_name.
+        This Method returns the model with the given case-insensitive model_name.
 
-        Raise LookupError if no model exists with this name.
+        It will raise LookupError if no model exists with this name.
         """
         if require_ready:
             self.apps.check_models_ready()
